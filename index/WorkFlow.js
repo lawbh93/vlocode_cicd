@@ -7,7 +7,7 @@ try {
   /* Origin Branch*/
   const Origen= core.getInput('Origin_Branch');
   /* Comma separated*/ 
-  const protectedBranches = core.getInput('protected_Branches');
+  const protectedBranches = core.getInput('protectedBranches');
   
   console.log(`Rama Destino: ${Destino}`);
   console.log(`Rama Origen: ${Origen}`);
@@ -18,7 +18,7 @@ try {
   if(Destino) {
     /*Init */
     var execProcess = require("./exec_process.js");
-    execProcess.result("bash init.sh $Destino $Origen $protectedBranches", function(err, response){
+    execProcess.result("bash .sh/init.sh $Destino $Origen $protectedBranches", function(err, response){
         if(!err){
             console.log(response);
         }else {

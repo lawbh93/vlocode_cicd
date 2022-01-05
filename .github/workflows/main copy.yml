@@ -19,7 +19,7 @@ jobs:
         uses: lawbh93/vlocode_cicd@latest
         with:
           Head_Branch: 'master'
-          Origin_Branch: '${GITHUB_REF#refs/heads/}'
+          Origin_Branch:  git branch --show-current
           protectedBranches: 'master,release,develop'
 
       # Use the output from the `hello` step
