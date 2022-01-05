@@ -4,7 +4,7 @@
     "%vlocity_namespace%__IsOrderDefault__c": true,
     "%vlocity_namespace%__isQuoteDefault__c": true,
     "CurrencyIsoCode": "MXN",
-    "Description": "Description",
+    "Description": "",
     "IsActive": true,
     "IsArchived": false,
     "IsStandard": true,
