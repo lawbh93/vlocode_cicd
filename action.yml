@@ -1,13 +1,24 @@
 name: 'Vlocity CICD'
 description: 'Vlocity CICD'
 inputs:
-  branch-name:  # id of input
-    description: 'Head branch'
+  Head_Branch:  # id of input
+    description: 'Target'
     required: true
     default: 'main'
+  Origin_Branch:
+    description: 'Origin'
+    required: true
+    default: ''
+  protectedBranches:
+    required: true 
+    default: 'master,release,develop'
 outputs:
-  branchHead: # id of output
-      description: 'branchHead'
+  Destino: # id of output
+      description: 'Target'
+  Origen:
+      description: 'Origin'
+  protectedBranches:
+      description: 'protectedBranches'
 runs:
   using: 'node12'
-  main: 'index/index.js'
+  main: 'index/WorkFlow.js'
