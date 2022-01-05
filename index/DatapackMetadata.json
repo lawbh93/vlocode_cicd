@@ -1,0 +1,422 @@
+[
+ {
+   "Condition__c": "where Name",
+   "DeveloperName": "VlocityAttachment",
+   "Label": "VlocityAttachment",
+   "queryFields__c": "SELECT Id, Name, vlocity_cmt__GlobalKey__c from",
+   "Source__c": "vlocity_cmt__GlobalKey__c",
+   "vlocity_sobject__c": "%vlocity_namespace%__VlocityAttachment__c",
+   "VlocityDataPackType__c": "VlocityAttachment",
+   "X2ndCondition__c": ""
+ },
+ {
+   "Condition__c": "where Name",
+   "DeveloperName": "ObjectLayout",
+   "Label": "ObjectLayout",
+   "queryFields__c": "SELECT Id, Name, vlocity_cmt__GlobalKey__c from",
+   "Source__c": "vlocity_cmt__GlobalKey__c",
+   "vlocity_sobject__c": "%vlocity_namespace%__ObjectLayout__c",
+   "VlocityDataPackType__c": "ObjectLayout",
+   "X2ndCondition__c": ""
+ },
+ {
+   "Condition__c": "where Name",
+   "DeveloperName": "StoryObjectConfiguration",
+   "Label": "StoryObjectConfiguration",
+   "queryFields__c": "SELECT Id, Name from",
+   "Source__c": "vlocity_cmt__GlobalKey__c",
+   "vlocity_sobject__c": "%vlocity_namespace%__StoryObjectConfiguration__c",
+   "VlocityDataPackType__c": "StoryObjectConfiguration",
+   "X2ndCondition__c": ""
+ },
+ {
+   "Condition__c": "where Name",
+   "DeveloperName": "ContextScope",
+   "Label": "ContextScope",
+   "queryFields__c": "SELECT Id, Name, vlocity_cmt__GlobalKey__c from",
+   "Source__c": "vlocity_cmt__GlobalKey__c",
+   "vlocity_sobject__c": "%vlocity_namespace%__ContextScope__c",
+   "VlocityDataPackType__c": "ContextScope",
+   "X2ndCondition__c": ""
+ },
+ {
+   "Condition__c": "where Name",
+   "DeveloperName": "ManualQueue",
+   "Label": "ManualQueue",
+   "queryFields__c": "SELECT Id, Name, vlocity_cmt__GlobalKey__c from",
+   "Source__c": "vlocity_cmt__GlobalKey__c",
+   "vlocity_sobject__c": "%vlocity_namespace%__ManualQueue__c",
+   "VlocityDataPackType__c": "ManualQueue",
+   "X2ndCondition__c": ""
+ },
+ {
+   "Condition__c": "where Name",
+   "DeveloperName": "PricingVariable",
+   "Label": "PricingVariable",
+   "queryFields__c": "SELECT Id, Name, vlocity_cmt__GlobalKey__c from",
+   "Source__c": "vlocity_cmt__GlobalKey__c",
+   "vlocity_sobject__c": "%vlocity_namespace%__PricingVariable__c",
+   "VlocityDataPackType__c": "PricingVariable",
+   "X2ndCondition__c": ""
+ },
+ {
+   "Condition__c": "where Name",
+   "DeveloperName": "Promotion",
+   "Label": "Promotion",
+   "queryFields__c": "SELECT Id, Name, vlocity_cmt__GlobalKey__c from",
+   "Source__c": "vlocity_cmt__GlobalKey__c",
+   "vlocity_sobject__c": "%vlocity_namespace%__Promotion__c",
+   "VlocityDataPackType__c": "Promotion",
+   "X2ndCondition__c": ""
+ },
+ {
+   "Condition__c": "where Name",
+   "DeveloperName": "VlocityScheduledJob",
+   "Label": "VlocityScheduledJob",
+   "queryFields__c": "SELECT Id, Name, vlocity_cmt__GlobalKey__c from",
+   "Source__c": "vlocity_cmt__GlobalKey__c",
+   "vlocity_sobject__c": "%vlocity_namespace%__VlocityScheduledJob__c",
+   "VlocityDataPackType__c": "VlocityScheduledJob",
+   "X2ndCondition__c": ""
+ },
+ {
+   "Condition__c": "where Name",
+   "DeveloperName": "TimePlan",
+   "Label": "TimePlan",
+   "queryFields__c": "SELECT Id, Name, vlocity_cmt__GlobalKey__c from",
+   "Source__c": "vlocity_cmt__GlobalKey__c",
+   "vlocity_sobject__c": "%vlocity_namespace%__TimePlan__c",
+   "VlocityDataPackType__c": "TimePlan",
+   "X2ndCondition__c": ""
+ },
+ {
+   "Condition__c": "where Name",
+   "DeveloperName": "OmniScript",
+   "Label": "OmniScript",
+   "queryFields__c": "SELECT Id, Name, vlocity_cmt__Version__c, vlocity_cmt__IsActive__c , vlocity_cmt__IsProcedure__c from",
+   "Source__c": "vlocity_cmt__GlobalKey__c",
+   "vlocity_sobject__c": "%vlocity_namespace%__OmniScript__c",
+   "VlocityDataPackType__c": "OmniScript",
+   "X2ndCondition__c": "and vlocity_cmt__IsProcedure__c=false"
+ },
+ {
+   "Condition__c": "where Name",
+   "DeveloperName": "VlocityCard",
+   "Label": "VlocityCard",
+   "queryFields__c": "SELECT Id, Name, vlocity_cmt__GlobalKey__c, vlocity_cmt__Version__c,vlocity_cmt__Active__c  from",
+   "Source__c": "vlocity_cmt__GlobalKey__c",
+   "vlocity_sobject__c": "%vlocity_namespace%__VlocityCard__c",
+   "VlocityDataPackType__c": "VlocityCard",
+   "X2ndCondition__c": ""
+ },
+ {
+   "Condition__c": "where Name",
+   "DeveloperName": "OrchestrationPlanDefinition",
+   "Label": "OrchestrationPlanDefinition",
+   "queryFields__c": "SELECT Id, Name, vlocity_cmt__GlobalKey__c from",
+   "Source__c": "vlocity_cmt__GlobalKey__c",
+   "vlocity_sobject__c": "%vlocity_namespace%__OrchestrationPlanDefinition__c",
+   "VlocityDataPackType__c": "OrchestrationPlanDefinition",
+   "X2ndCondition__c": ""
+ },
+ {
+   "Condition__c": "where Name",
+   "DeveloperName": "ContextDimension",
+   "Label": "ContextDimension",
+   "queryFields__c": "SELECT Id, Name, vlocity_cmt__GlobalKey__c from",
+   "Source__c": "vlocity_cmt__GlobalKey__c",
+   "vlocity_sobject__c": "%vlocity_namespace%__ContextDimension__c",
+   "VlocityDataPackType__c": "ContextDimension",
+   "X2ndCondition__c": ""
+ },
+ {
+   "Condition__c": "where Name",
+   "DeveloperName": "UISection",
+   "Label": "UISection",
+   "queryFields__c": "SELECT Id, Name, vlocity_cmt__GlobalKey__c from",
+   "Source__c": "vlocity_cmt__GlobalKey__c",
+   "vlocity_sobject__c": "%vlocity_namespace%__UISection__c",
+   "VlocityDataPackType__c": "UISection",
+   "X2ndCondition__c": ""
+ },
+ {
+   "Condition__c": "where Name",
+   "DeveloperName": "IntegrationRetryPolicy",
+   "Label": "IntegrationRetryPolicy",
+   "queryFields__c": "SELECT Id, Name, vlocity_cmt__GlobalKey__c from",
+   "Source__c": "vlocity_cmt__GlobalKey__c",
+   "vlocity_sobject__c": "%vlocity_namespace%__IntegrationRetryPolicy__c",
+   "VlocityDataPackType__c": "IntegrationRetryPolicy",
+   "X2ndCondition__c": ""
+ },
+ {
+   "Condition__c": "where Name",
+   "DeveloperName": "ObjectClass",
+   "Label": "ObjectClass",
+   "queryFields__c": "SELECT Id, Name, vlocity_cmt__GlobalKey__c from",
+   "Source__c": "vlocity_cmt__GlobalKey__c",
+   "vlocity_sobject__c": "%vlocity_namespace%__ObjectClass__c",
+   "VlocityDataPackType__c": "ObjectClass",
+   "X2ndCondition__c": ""
+ },
+ {
+   "Condition__c": "where Name",
+   "DeveloperName": "Product2",
+   "Label": "Product2",
+   "queryFields__c": "SELECT Id, Name from",
+   "Source__c": "DeveloperName",
+   "vlocity_sobject__c": "Product2",
+   "VlocityDataPackType__c": "Product2",
+   "X2ndCondition__c": ""
+ },
+ {
+   "Condition__c": "where Name",
+   "DeveloperName": "DataRaptor",
+   "Label": "DataRaptor",
+   "queryFields__c": "SELECT Id, Name, vlocity_cmt__GlobalKey__c from",
+   "Source__c": "vlocity_cmt__GlobalKey__c",
+   "vlocity_sobject__c": "%vlocity_namespace%__DRBundle__c",
+   "VlocityDataPackType__c": "DataRaptor",
+   "X2ndCondition__c": ""
+ },
+ {
+   "Condition__c": "where Name",
+   "DeveloperName": "Catalog",
+   "Label": "Catalog",
+   "queryFields__c": "SELECT Id, Name, vlocity_cmt__GlobalKey__c from",
+   "Source__c": "vlocity_cmt__GlobalKey__c",
+   "vlocity_sobject__c": "%vlocity_namespace%__Catalog__c",
+   "VlocityDataPackType__c": "Catalog",
+   "X2ndCondition__c": ""
+ },
+ {
+   "Condition__c": "where Name",
+   "DeveloperName": "ItemImplementation",
+   "Label": "ItemImplementation",
+   "queryFields__c": "SELECT Id, Name, vlocity_cmt__GlobalKey__c from",
+   "Source__c": "vlocity_cmt__GlobalKey__c",
+   "vlocity_sobject__c": "%vlocity_namespace%__ItemImplementation__c",
+   "VlocityDataPackType__c": "ItemImplementation",
+   "X2ndCondition__c": ""
+ },
+ {
+   "Condition__c": "where Name",
+   "DeveloperName": "OrchestrationDependencyDefinition",
+   "Label": "OrchestrationDependencyDefinition",
+   "queryFields__c": "SELECT Id, Name, vlocity_cmt__GlobalKey__c from",
+   "Source__c": "vlocity_cmt__GlobalKey__c",
+   "vlocity_sobject__c": "%vlocity_namespace%__OrchestrationDependencyDefinition__c",
+   "VlocityDataPackType__c": "OrchestrationDependencyDefinition",
+   "X2ndCondition__c": ""
+ },
+ {
+   "Condition__c": "where Name",
+   "DeveloperName": "VlocityAction",
+   "Label": "VlocityAction",
+   "queryFields__c": "SELECT Id, Name from",
+   "Source__c": "vlocity_cmt__GlobalKey__c",
+   "vlocity_sobject__c": "%vlocity_namespace%__VlocityAction__c",
+   "VlocityDataPackType__c": "VlocityAction",
+   "X2ndCondition__c": ""
+ },
+ {
+   "Condition__c": "where Name",
+   "DeveloperName": "Rule",
+   "Label": "Rule",
+   "queryFields__c": "SELECT Id, Name, vlocity_cmt__GlobalKey__c from",
+   "Source__c": "vlocity_cmt__GlobalKey__c",
+   "vlocity_sobject__c": "%vlocity_namespace%__Rule__c",
+   "VlocityDataPackType__c": "Rule",
+   "X2ndCondition__c": ""
+ },
+ {
+   "Condition__c": "where Name",
+   "DeveloperName": "IntegrationProcedure",
+   "Label": "IntegrationProcedure",
+   "queryFields__c": "SELECT Id, Name, vlocity_cmt__Version__c,vlocity_cmt__ProcedureKey__c, vlocity_cmt__IsProcedure__c, vlocity_cmt__IsActive__c  from",
+   "Source__c": "vlocity_cmt__GlobalKey__c",
+   "vlocity_sobject__c": "%vlocity_namespace%__OmniScript__c",
+   "VlocityDataPackType__c": "IntegrationProcedure",
+   "X2ndCondition__c": "and vlocity_cmt__IsProcedure__c =true"
+ },
+ {
+   "Condition__c": "where Name",
+   "DeveloperName": "OrchestrationItemDefinition",
+   "Label": "OrchestrationItemDefinition",
+   "queryFields__c": "SELECT Id, Name, vlocity_cmt__GlobalKey__c from",
+   "Source__c": "vlocity_cmt__GlobalKey__c",
+   "vlocity_sobject__c": "%vlocity_namespace%__OrchestrationItemDefinition__c",
+   "VlocityDataPackType__c": "OrchestrationItemDefinition",
+   "X2ndCondition__c": ""
+ },
+ {
+   "Condition__c": "where Name",
+   "DeveloperName": "VlocitySearchWidgetSetup",
+   "Label": "VlocitySearchWidgetSetup",
+   "queryFields__c": "SELECT Id, Name from",
+   "Source__c": "vlocity_cmt__GlobalKey__c",
+   "vlocity_sobject__c": "%vlocity_namespace%__VlocitySearchWidgetSetup__c",
+   "VlocityDataPackType__c": "VlocitySearchWidgetSetup",
+   "X2ndCondition__c": ""
+ },
+ {
+   "Condition__c": "where Name",
+   "DeveloperName": "CustomFieldMap",
+   "Label": "CustomFieldMap",
+   "queryFields__c": "SELECT Id, Name from",
+   "Source__c": "vlocity_cmt__GlobalKey__c",
+   "vlocity_sobject__c": "%vlocity_namespace%__CustomFieldMap__c",
+   "VlocityDataPackType__c": "CustomFieldMap",
+   "X2ndCondition__c": ""
+ },
+ {
+   "Condition__c": "where Name",
+   "DeveloperName": "UIFacet",
+   "Label": "UIFacet",
+   "queryFields__c": "SELECT Id, Name, vlocity_cmt__GlobalKey__c from",
+   "Source__c": "vlocity_cmt__GlobalKey__c",
+   "vlocity_sobject__c": "%vlocity_namespace%__UIFacet__c",
+   "VlocityDataPackType__c": "UIFacet",
+   "X2ndCondition__c": ""
+ },
+ {
+   "Condition__c": "where Name",
+   "DeveloperName": "EntityFilter",
+   "Label": "EntityFilter",
+   "queryFields__c": "SELECT Id, Name, vlocity_cmt__GlobalKey__c from",
+   "Source__c": "vlocity_cmt__GlobalKey__c",
+   "vlocity_sobject__c": "%vlocity_namespace%__EntityFilter__c",
+   "VlocityDataPackType__c": "EntityFilter",
+   "X2ndCondition__c": ""
+ },
+ {
+   "Condition__c": "where Name",
+   "DeveloperName": "VlocityStateModel",
+   "Label": "VlocityStateModel",
+   "queryFields__c": "SELECT Id, Name from",
+   "Source__c": "vlocity_cmt__GlobalKey__c",
+   "vlocity_sobject__c": "%vlocity_namespace%__VlocityStateModel__c",
+   "VlocityDataPackType__c": "VlocityStateModel",
+   "X2ndCondition__c": ""
+ },
+ {
+   "Condition__c": "where Name",
+   "DeveloperName": "VlocityUILayout",
+   "Label": "VlocityUILayout",
+   "queryFields__c": "SELECT Id, Name, vlocity_cmt__Version__c , vlocity_cmt__GlobalKey__c from",
+   "Source__c": "vlocity_cmt__GlobalKey__c",
+   "vlocity_sobject__c": "%vlocity_namespace%__VlocityUILayout__c",
+   "VlocityDataPackType__c": "VlocityUILayout",
+   "X2ndCondition__c": ""
+ },
+ {
+   "Condition__c": "where Name",
+   "DeveloperName": "InterfaceImplementation",
+   "Label": "InterfaceImplementation",
+   "queryFields__c": "SELECT Id, Name from",
+   "Source__c": "vlocity_cmt__GlobalKey__c",
+   "vlocity_sobject__c": "%vlocity_namespace%__InterfaceImplementation__c",
+   "VlocityDataPackType__c": "InterfaceImplementation",
+   "X2ndCondition__c": ""
+ },
+ {
+   "Condition__c": "where Name",
+   "DeveloperName": "PriceList",
+   "Label": "PriceList",
+   "queryFields__c": "SELECT Id, Name, vlocity_cmt__GlobalKey__c from",
+   "Source__c": "vlocity_cmt__GlobalKey__c",
+   "vlocity_sobject__c": "%vlocity_namespace%__PriceList__c",
+   "VlocityDataPackType__c": "PriceList",
+   "X2ndCondition__c": ""
+ },
+ {
+   "Condition__c": "where Name",
+   "DeveloperName": "System",
+   "Label": "System",
+   "queryFields__c": "SELECT Id, Name, vlocity_cmt__GlobalKey__c from",
+   "Source__c": "vlocity_cmt__GlobalKey__c",
+   "vlocity_sobject__c": "%vlocity_namespace%__System__c",
+   "VlocityDataPackType__c": "System",
+   "X2ndCondition__c": ""
+ },
+ {
+   "Condition__c": "where Name",
+   "DeveloperName": "TimePolicy",
+   "Label": "TimePolicy",
+   "queryFields__c": "SELECT Id, Name, vlocity_cmt__GlobalKey__c from",
+   "Source__c": "vlocity_cmt__GlobalKey__c",
+   "vlocity_sobject__c": "%vlocity_namespace%__TimePolicy__c",
+   "VlocityDataPackType__c": "TimePolicy",
+   "X2ndCondition__c": ""
+ },
+ {
+   "Condition__c": "where Name",
+   "DeveloperName": "AttributeCategory",
+   "Label": "AttributeCategory",
+   "queryFields__c": "SELECT Id, Name, vlocity_cmt__GlobalKey__c from",
+   "Source__c": "vlocity_cmt__GlobalKey__c",
+   "vlocity_sobject__c": "%vlocity_namespace%__AttributeCategory__c",
+   "VlocityDataPackType__c": "AttributeCategory",
+   "X2ndCondition__c": ""
+ },
+ {
+   "Condition__c": "where Name",
+   "DeveloperName": "CalculationMatrix",
+   "Label": "CalculationMatrix",
+   "queryFields__c": "SELECT Id, Name, vlocity_cmt__GlobalKey__c from",
+   "Source__c": "vlocity_cmt__GlobalKey__c",
+   "vlocity_sobject__c": "%vlocity_namespace%__CalculationMatrix__c",
+   "VlocityDataPackType__c": "CalculationMatrix",
+   "X2ndCondition__c": ""
+ },
+ {
+   "Condition__c": "where Name",
+   "DeveloperName": "Document",
+   "Label": "Document",
+   "queryFields__c": "SELECT Id, Name, DeveloperName from",
+   "Source__c": "DeveloperName",
+   "vlocity_sobject__c": "Document",
+   "VlocityDataPackType__c": "Document",
+   "X2ndCondition__c": ""
+ },
+ {
+   "Condition__c": "where Name",
+   "DeveloperName": "VlocityUITemplate",
+   "Label": "VlocityUITemplate",
+   "queryFields__c": "SELECT Id, Name,vlocity_cmt__Version__c,vlocity_cmt__Active__c from",
+   "Source__c": "vlocity_cmt__GlobalKey__c",
+   "vlocity_sobject__c": "%vlocity_namespace%__VlocityUITemplate__c",
+   "VlocityDataPackType__c": "VlocityUITemplate",
+   "X2ndCondition__c": ""
+ },
+ {
+   "Condition__c": "where Name",
+   "DeveloperName": "PricingPlan",
+   "Label": "PricingPlan",
+   "queryFields__c": "SELECT Id, Name, vlocity_cmt__GlobalKey__c from",
+   "Source__c": "vlocity_cmt__GlobalKey__c",
+   "vlocity_sobject__c": "%vlocity_namespace%__PricingPlan__c",
+   "VlocityDataPackType__c": "PricingPlan",
+   "X2ndCondition__c": ""
+ },
+ {
+   "Condition__c": "where Name",
+   "DeveloperName": "Pricebook2",
+   "Label": "Pricebook2",
+   "queryFields__c": "SELECT Id, Name from",
+   "Source__c": "DeveloperName",
+   "vlocity_sobject__c": "Pricebook2",
+   "VlocityDataPackType__c": "Pricebook2",
+   "X2ndCondition__c": ""
+ },
+ {
+   "Condition__c": "where Name",
+   "DeveloperName": "VlocityPicklist",
+   "Label": "VlocityPicklist",
+   "queryFields__c": "SELECT Id, Name, vlocity_cmt__GlobalKey__c from",
+   "Source__c": "vlocity_cmt__GlobalKey__c",
+   "vlocity_sobject__c": "%vlocity_namespace%__Picklist__c",
+   "VlocityDataPackType__c": "VlocityPicklist",
+   "X2ndCondition__c": ""
+ }
+]

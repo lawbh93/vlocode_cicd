@@ -1,0 +1,174 @@
+[
+  {
+    "Sobject": "DataRaptor",
+    "FilePath": "DataPackMetadata/DataRaptor/"
+  },
+  {
+    "Sobject": "Document",
+    "FilePath": "DataPackMetadata/Document/"
+  },
+  {
+    "Sobject": "AttributeCategory",
+    "FilePath": "DataPackMetadata/AttributeCategory/"
+  },
+  {
+    "Sobject": "CalculationMatrix",
+    "FilePath": "DataPackMetadata/CalculationMatrix/"
+  },
+  {
+    "Sobject": "Catalog",
+    "FilePath": "DataPackMetadata/Catalog/"
+  },
+  {
+    "Sobject": "ContextDimension",
+    "FilePath": "DataPackMetadata/ContextDimension/"
+  },
+  {
+    "Sobject": "ContextScope",
+    "FilePath": "DataPackMetadata/ContextScope/"
+  },
+  {
+    "Sobject": "CpqConfigurationSetup",
+    "FilePath": "DataPackMetadata/CpqConfigurationSetup/"
+  },
+  {
+    "Sobject": "CustomFieldMap",
+    "FilePath": "DataPackMetadata/CustomFieldMap/"
+  },
+  {
+    "Sobject": "EntityFilter",
+    "FilePath": "DataPackMetadata/EntityFilter/"
+  },
+  {
+    "Sobject": "IntegrationProcedure",
+    "FilePath": "DataPackMetadata/IntegrationProcedure/"
+  },
+  {
+    "Sobject": "IntegrationRetryPolicy",
+    "FilePath": "DataPackMetadata/IntegrationRetryPolicy/"
+  },
+  {
+    "Sobject": "InterfaceImplementation",
+    "FilePath": "DataPackMetadata/InterfaceImplementation/"
+  },
+  {
+    "Sobject": "ItemImplementation",
+    "FilePath": "DataPackMetadata/ItemImplementation/"
+  },
+  {
+    "Sobject": "ManualQueue",
+    "FilePath": "DataPackMetadata/ManualQueue/"
+  },
+  {
+    "Sobject": "ObjectClass",
+    "FilePath": "DataPackMetadata/ObjectClass/"
+  },
+  {
+    "Sobject": "ObjectLayout",
+    "FilePath": "DataPackMetadata/ObjectLayout/"
+  },
+  {
+    "Sobject": "OmniScript",
+    "FilePath": "DataPackMetadata/OmniScript/"
+  },
+  {
+    "Sobject": "OrchestrationDependencyDefinition",
+    "FilePath": "DataPackMetadata/OrchestrationDependencyDefinition/"
+  },
+  {
+    "Sobject": "OrchestrationItemDefinition",
+    "FilePath": "DataPackMetadata/OrchestrationItemDefinition/"
+  },
+  {
+    "Sobject": "OrchestrationPlanDefinition",
+    "FilePath": "DataPackMetadata/OrchestrationPlanDefinition/"
+  },
+  {
+    "Sobject": "Pricebook2",
+    "FilePath": "DataPackMetadata/Pricebook2/"
+  },
+  {
+    "Sobject": "PriceList",
+    "FilePath": "DataPackMetadata/PriceList/"
+  },
+  {
+    "Sobject": "PricingPlan",
+    "FilePath": "DataPackMetadata/PricingPlan/"
+  },
+  {
+    "Sobject": "PricingVariable",
+    "FilePath": "DataPackMetadata/PricingVariable/"
+  },
+  {
+    "Sobject": "Product2",
+    "FilePath": "DataPackMetadata/Product2/"
+  },
+  {
+    "Sobject": "Promotion",
+    "FilePath": "DataPackMetadata/Promotion/"
+  },
+  {
+    "Sobject": "Rule",
+    "FilePath": "DataPackMetadata/Rule/"
+  },
+  {
+    "Sobject": "StoryObjectConfiguration",
+    "FilePath": "DataPackMetadata/StoryObjectConfiguration/"
+  },
+  {
+    "Sobject": "System",
+    "FilePath": "DataPackMetadata/System/"
+  },
+  {
+    "Sobject": "TimePlan",
+    "FilePath": "DataPackMetadata/TimePlan/"
+  },
+  {
+    "Sobject": "TimePolicy",
+    "FilePath": "DataPackMetadata/TimePolicy/"
+  },
+  {
+    "Sobject": "UIFacet",
+    "FilePath": "DataPackMetadata/UIFacet/"
+  },
+  {
+    "Sobject": "UISection",
+    "FilePath": "DataPackMetadata/UISection/"
+  },
+  {
+    "Sobject": "VlocityAction",
+    "FilePath": "DataPackMetadata/VlocityAction/"
+  },
+  {
+    "Sobject": "VlocityAttachment",
+    "FilePath": "DataPackMetadata/VlocityAttachment/"
+  },
+  {
+    "Sobject": "VlocityCard",
+    "FilePath": "DataPackMetadata/VlocityCard/"
+  },
+  {
+    "Sobject": "VlocityPicklist",
+    "FilePath": "DataPackMetadata/VlocityPicklist/"
+  },
+  {
+    "Sobject": "VlocityScheduledJob",
+    "FilePath": "DataPackMetadata/VlocityScheduledJob/"
+  },
+  {
+    "Sobject": "VlocitySearchWidgetSetup",
+    "FilePath": "DataPackMetadata/VlocitySearchWidgetSetup/"
+  },
+  {
+    "Sobject": "VlocityStateModel",
+    "FilePath": "DataPackMetadata/VlocityStateModel/"
+  },
+  {
+    "Sobject": "VlocityUILayout",
+    "FilePath": "DataPackMetadata/VlocityUILayout/"
+  },
+  {
+    "Sobject": "VlocityUITemplate",
+    "FilePath": "DataPackMetadata/VlocityUITemplate/"
+  }
+]

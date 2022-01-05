@@ -1,0 +1,33 @@
+{
+  "name": "vlocode_cicd",
+  "version": "1.0.0",
+  "description": "Repositorio prueba Implementaciones Vlocity",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lawbh93/vlocode_cicd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lawbh93/vlocode_cicd/issues"
+  },
+  "homepage": "https://github.com/lawbh93/vlocode_cicd#readme",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.0",
+    "@prettier/plugin-xml": "^1.2.0",
+    "@salesforce/eslint-config-lwc": "^3.2.1",
+    "@salesforce/lwc-jest": "^0.6.2",
+    "@salesforce/sfdx-lwc-jest": "^1.1.0",
+    "fs-extra": "^10.0.0",
+    "npm": "^8.3.0",
+    "prettier": "^1.19.1",
+    "sfdx": "^1.4.2",
+    "vlocity": "^1.14.17"
+  }
+}

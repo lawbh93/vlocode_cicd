@@ -1,0 +1,15 @@
+{
+    "%vlocity_namespace%__IsDefault__c": true,
+    "%vlocity_namespace%__IsOpportunityDefault__c": true,
+    "%vlocity_namespace%__IsOrderDefault__c": true,
+    "%vlocity_namespace%__isQuoteDefault__c": true,
+    "CurrencyIsoCode": "MXN",
+    "Description": "Merge base",
+    "IsActive": true,
+    "IsArchived": false,
+    "IsStandard": true,
+    "Name": "Standard Price Book",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "Pricebook2",
+    "VlocityRecordSourceKey": "Pricebook2/Standard Price Book"
+}

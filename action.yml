@@ -1,0 +1,13 @@
+name: 'Vlocity CICD'
+description: 'Vlocity CICD'
+inputs:
+  branch-name:  # id of input
+    description: 'Head branch'
+    required: true
+    default: 'main'
+outputs:
+  branchHead: # id of output
+      description: 'branchHead'
+runs:
+  using: 'node12'
+  main: 'index/index.js'
