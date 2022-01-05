@@ -1,4 +1,4 @@
 #!/bin/bash
-echo "Get Diffs"
 BRANCH=${Destino:default}
+Origen=${Origen:default}
 echo $BRANCH
