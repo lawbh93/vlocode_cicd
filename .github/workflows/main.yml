@@ -9,6 +9,8 @@ jobs:
     name: A job to CICD
     steps:
       - uses: actions/checkout@v2
+        with: 
+          fetch-depth: 0
       - name: Get info
         id: act1
         uses: lawbh93/vlocode_cicd@latest
