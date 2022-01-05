@@ -18,7 +18,7 @@ try {
   if(Destino) {
     /*Init */
     var execProcess = require("./exec_process.js");
-    execProcess.result("bash .sh/init.sh" + Destino + Origen + protectedBranches, function(err, response){
+    execProcess.result(`Destino=${Destino} Origen=${Origen} protectedBranches=${protectedBranches} bash .sh/init.sh`, function(err, response){
         if(!err){
             console.log(response);
         }else {
