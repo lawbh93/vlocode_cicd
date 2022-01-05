@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI2
+name: Ejecución Dinamica
 on: [push]
 
 jobs:
@@ -24,22 +24,3 @@ jobs:
           Head_Branch: 'master'
           Origin_Branch:  ${{ steps.brancha.outputs.BRANCHNAME }}
           protectedBranches: 'master,release,develop'
-
-      # Use the output from the `hello` step
-      - name: Get the output branchHead
-        id: branches
-        run: |
-          git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
-          git fetch --all
-          git branch --show-current >> branch.txt
-          echo "The output branchHead ${{ steps.actionInfo.outputs.branchHead }}"
-          echo "::set-output name=BRANCHNAME::${GITHUB_REF#refs/heads/}"
-      - name: ReadInfo2
-        id: shaches
-        env:
-          TARGET: ${{ steps.actionInfo.outputs.branchHead }}
-          BRANCH : ${{ steps.branches.outputs.BRANCHNAME }}
-        run: |
-          bash .sh/temp.sh $TARGET $BRANCH
-
-
