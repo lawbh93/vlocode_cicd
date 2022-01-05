@@ -22,7 +22,7 @@ jobs:
         uses: lawbh93/vlocode_cicd@latest
         with:
           Head_Branch: 'master'
-          Origin_Branch:  ${{ steps.brancha.outputs.BRANCHNAME }}"
+          Origin_Branch:  ${{ steps.brancha.outputs.BRANCHNAME }}
           protectedBranches: 'master,release,develop'
 
       # Use the output from the `hello` step
