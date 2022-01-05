@@ -1,5 +1,11 @@
 #!/bin/bash
 echo 'Here'
-BRANCH=${Destino:default}
+Destino=${Destino:default}
 Origen=${Origen:default}
-echo $BRANCH
+protectedBranches=${protectedBranches:default}
+for ((i = 0; i < ${#protectedBranches[@]}; ++i)); do
+
+if [[ " ${protectedBranches[i]} " =~  ${Destino} ]]; then
+       VAR=$(git diff remotes/origin/$Destino...$Origen --name-only)
+       echo $VAR
+fi
