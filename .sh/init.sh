@@ -9,3 +9,4 @@ if [[ " ${protectedBranches[i]} " =~  ${Destino} ]]; then
        VAR=$(git diff remotes/origin/$Destino...$Origen --name-only)
        echo $VAR
 fi
+done
