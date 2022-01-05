@@ -1,5 +1,3 @@
 projectPath: ./example_vlocityAuto
 oauthConnection: true
 queries: #Here goes the rest of file
-   - VlocityDataPackType: DataRaptor
-      query: SELECT Id, Name, vlocity_cmt__GlobalKey__c from %vlocity_namespace%__DRBundle__c where Name = 'AccountSearch'
