@@ -6,7 +6,7 @@ protectedBranches=${protectedBranches:default}
 
 username=${username:default}
 client_secret=${client_secret:default}
-password=${password:default}
+password=${contrasenia:default}
 client_id=${client_id:default}
 url=${url:default}
 echo "the username is: " $username
