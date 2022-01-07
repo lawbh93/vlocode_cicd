@@ -26,8 +26,8 @@ jobs:
           Head_Branch: 'master'
           Origin_Branch:  ${{ steps.brancha.outputs.BRANCHNAME }}
           protectedBranches: 'master,release,develop'
-          username:
-          client_secret:
-          password:
-          client_id:
-          url:
+          username: ${{ secrets.USERNAME }}
+          client_secret: ${{ secrets.CLIENT_SECRET }}
+          password: ${{ secrets.PASSWORD }}
+          client_id: ${{ secrets.CLIENT_ID }}
+          url: ${{ secrets.URL }}
