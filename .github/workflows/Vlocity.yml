@@ -18,9 +18,16 @@ jobs:
         run: |
           echo "::set-output name=BRANCHNAME::${GITHUB_REF#refs/heads/}"
       - name: Reading Info
+        env: 
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         id: actionInfo
         uses: lawbh93/vlocode_cicd@latest
         with:
           Head_Branch: 'master'
           Origin_Branch:  ${{ steps.brancha.outputs.BRANCHNAME }}
           protectedBranches: 'master,release,develop'
+          username:
+          client_secret:
+          password:
+          client_id:
+          url:

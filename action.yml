@@ -12,6 +12,16 @@ inputs:
   protectedBranches:
     required: true 
     default: 'master,release,develop'
+  username:
+    required: true
+  client_secret:
+    required: true
+  password:
+    required: true
+  client_id:
+    required: true
+  url:
+    required: true
 outputs:
   Destino: # id of output
       description: 'Target'

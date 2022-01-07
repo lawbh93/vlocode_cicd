@@ -8,10 +8,14 @@ try {
   const Origen= core.getInput('Origin_Branch');
   /* Comma separated*/ 
   const protectedBranches = core.getInput('protectedBranches');
+  const url = core.getInput('url');
+
+  /*username */
   
   console.log(`Rama Destino: ${Destino}`);
   console.log(`Rama Origen: ${Origen}`);
   console.log(`Ramas protegidas: ${protectedBranches}`);
+  console.log(`url: ${url}`);
   core.setOutput("Destino", Destino);
   core.setOutput("Origen", Origen);
   core.setOutput("protectedBranches", protectedBranches);
