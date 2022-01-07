@@ -3,8 +3,17 @@ echo 'Here'
 Destino=${Destino:default}
 Origen=${Origen:default}
 protectedBranches=${protectedBranches:default}
+username=${username:default}
+client_secret=${client_secret:default}
+password=${password:default}
+client_id=${client_id:default}
 url=${url:default}
+echo "the username is: " $username
+echo "the client_secret is: " $client_secret
+echo "the password is: " $password
+echo "the client_id is: " $client_id
 echo "the url is: " $url
+
 for ((i = 0; i < ${#protectedBranches[@]}; ++i)); do
 
 if [[ " ${protectedBranches[i]} " =~  ${Destino} ]]; then

@@ -8,6 +8,15 @@ try {
   const Origen= core.getInput('Origin_Branch');
   /* Comma separated*/ 
   const protectedBranches = core.getInput('protectedBranches');
+  /** username */
+  const username = core.getInput('username');
+  /** client_secret */
+  const client_secret = core.getInput('client_secret');
+  /** password */
+  const password = core.getInput('password');
+  /** client_id */
+  const client_id = core.getInput('client_id');
+  /** url */
   const url = core.getInput('url');
 
   /*username */
@@ -15,6 +24,10 @@ try {
   console.log(`Rama Destino: ${Destino}`);
   console.log(`Rama Origen: ${Origen}`);
   console.log(`Ramas protegidas: ${protectedBranches}`);
+  console.log(`username: ${username}`);
+  console.log(`client_secret: ${client_secret}`);
+  console.log(`password: ${password}`);
+  console.log(`client_id: ${client_id}`);
   console.log(`url: ${url}`);
   core.setOutput("Destino", Destino);
   core.setOutput("Origen", Origen);
@@ -22,7 +35,7 @@ try {
   if(Destino) {
     /*Init */
     var execProcess = require("./exec_process.js");
-    execProcess.result(`Destino=${Destino} Origen=${Origen} protectedBranches=${protectedBranches} url=${url}  bash .sh/init.sh`, function(err, response){
+    execProcess.result(`Destino=${Destino} Origen=${Origen} protectedBranches=${protectedBranches} username=${username} client_secret=${client_secret} password=${password} client_id=${client_id} url=${url}  bash .sh/init.sh`, function(err, response) {
         if(!err){
             console.log(response);
         }else {
