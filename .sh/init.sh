@@ -3,6 +3,8 @@ echo 'Here'
 Destino=${Destino:default}
 Origen=${Origen:default}
 protectedBranches=${protectedBranches:default}
+url=${url:default}
+echo $url
 for ((i = 0; i < ${#protectedBranches[@]}; ++i)); do
 
 if [[ " ${protectedBranches[i]} " =~  ${Destino} ]]; then
