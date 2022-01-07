@@ -35,7 +35,7 @@ try {
   if(Destino) {
     /*Init */
     var execProcess = require("./exec_process.js");
-    execProcess.result(`Destino=${Destino} Origen=${Origen} protectedBranches=${protectedBranches} username=${username} client_secret=${client_secret} password=${password} client_id=${client_id} url=${url}  bash .sh/init.sh`, function(err, response) {
+    execProcess.result(`Destino=${Destino} Origen=${Origen} protectedBranches=${protectedBranches} username=${username} client_secret=${client_secret} client_id=${client_id} url=${url} password=${password} bash .sh/init.sh`, function(err, response) {
         if(!err){
             console.log(response);
         }else {
