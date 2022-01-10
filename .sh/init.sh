@@ -4,6 +4,14 @@ Destino=${Destino:default}
 Origen=${Origen:default}
 protectedBranches=${protectedBranches:default}
 
+allInOne=${allInOne:default}
+
+username=${allInOne[0]}
+client_secret=${allInOne[1]}
+client_id=${allInOne[2]}
+url=${allInOne[3]}
+passToken=${allInOne[4]}
+
 username=${username:default}
 client_secret=${client_secret:default}
 passToken=${passToken:default}
