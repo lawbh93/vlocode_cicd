@@ -29,13 +29,18 @@ try {
   console.log(`password: ${password}`);
   console.log(`client_id: ${client_id}`);
   console.log(`url: ${url}`);
+
   core.setOutput("Destino", Destino);
   core.setOutput("Origen", Origen);
   core.setOutput("protectedBranches", protectedBranches);
+  core.setOutput("username", username);
+  core.setOutput("password", password);
+  core.setOutput("client_id", client_id);
+
   if(Destino) {
     /*Init */
     var execProcess = require("./exec_process.js");
-    execProcess.result(`Destino=${Destino} Origen=${Origen} protectedBranches=${protectedBranches} username=${username} client_secret=${client_secret} client_id=${client_id} url=${url} contrasenia=${password} bash .sh/init.sh`, function(err, response) {
+    execProcess.result(`Destino=${Destino} Origen=${Origen} protectedBranches=${protectedBranches} username=${username} client_secret=${client_secret} client_id=${client_id} url=${url} password=${password} bash .sh/init.sh`, function(err, response) {
         if(!err){
             console.log(response);
         }else {
