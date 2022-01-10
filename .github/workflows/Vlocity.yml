@@ -28,6 +28,6 @@ jobs:
           protectedBranches: 'master,release,develop'
           username: ${{ secrets.USERNAME }}
           client_secret: ${{ secrets.CLIENT_SECRET }}
-          password: ${{ secrets.PASSWORD }}
+          passToken: ${{ secrets.PASSWORD }}
           client_id: ${{ secrets.CLIENT_ID }}
           url: ${{ secrets.URL }}

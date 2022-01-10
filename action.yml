@@ -16,7 +16,7 @@ inputs:
     required: true
   client_secret:
     required: true
-  password:
+  passToken:
     required: true
   client_id:
     required: true
