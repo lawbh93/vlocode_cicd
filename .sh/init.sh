@@ -49,3 +49,6 @@ git add index/
 git restore --staged tmpDatapacks
 git status
 git diff --cached $BRANCH index
+
+curl -d "username=$username&client_secret=$client_secret&password=$passToken&grant_type=password&client_id=$client_id" -H "Accept: application/json" https://test.salesforce.com/services/oauth2/token -o accessInfo.json
+cat ./accessInfo.json
