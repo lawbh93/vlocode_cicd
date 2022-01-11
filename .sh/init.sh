@@ -4,16 +4,11 @@ Destino=${Destino:default}
 Origen=${Origen:default}
 protectedBranches=${protectedBranches:default}
 
-allInOne=${allInOne:default}
-temp = allInOne.split(",");
-
-
-username=${temp[0]}
-client_secret=${temp[1]}
-client_id=${temp[2]}
-url=${temp[3]}
-passToken=${temp[4]}
-
+username=${username:default}
+client_secret=${client_secret:default}
+passToken=${passToken:default}
+client_id=${client_id:default}
+url=${url:default}
 echo "the username is: " $username
 echo "the client_secret is: " $client_secret
 echo "the password is: " $passToken
