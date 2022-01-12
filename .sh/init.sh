@@ -52,7 +52,4 @@ git diff --cached $BRANCH index
 
 Org_Name='sandbox'
 
-node index/getOrgConfig.js $Org_Name
-
-curl -d "username=$username&client_secret=$client_secret&password=$passToken&grant_type=password&client_id=$client_id" -H "Accept: application/json" https://test.salesforce.com/services/oauth2/token -o accessInfo.json
-cat ./accessInfo.json
+node index/getOrgConfig.js $Org_Name $username $client_secret $passToken $client_id
