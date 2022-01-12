@@ -21,15 +21,6 @@ try {
 
   /*username */
   
-  console.log(`Rama Destino: ${Destino}`);
-  console.log(`Rama Origen: ${Origen}`);
-  console.log(`Ramas protegidas: ${protectedBranches}`);
-  console.log(`username: ${username}`);
-  console.log(`client_secret: ${client_secret}`);
-  console.log(`passToken: ${passToken}`);
-  console.log(`client_id: ${client_id}`);
-  console.log(`url: ${url}`);
-
   core.setOutput("Destino", Destino);
   core.setOutput("Origen", Origen);
   core.setOutput("protectedBranches", protectedBranches);

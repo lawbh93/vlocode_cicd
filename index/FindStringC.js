@@ -8,17 +8,14 @@ var differences = [];
 var NewListDiffs =[];
 // Intitializing the readFileLines with filename
 process.argv.forEach((val, index) => {
-  console.log(`${index}: ${val}`);
   if (val.includes("tmpDatapacks")) {
     differences.push(val);
   }
-  console.log("New differences: " + differences);
 });
 
 try {
   for (let i = 0; i < differences.length; i++) {
     var str = differences[i];
-    console.log(str);
     if(str.includes('_DataPack.json')) {
       NewListDiffs.push(str);
     }
@@ -30,7 +27,6 @@ try {
 
     fs.readFile(fileToOpen, 'utf8', (err, jsonString) => {
       if (err) {
-          console.log("Error reading file from disk:", err)
           return
       }
       try {

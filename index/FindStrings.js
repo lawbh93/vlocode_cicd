@@ -8,16 +8,13 @@ var differences = [];
 
 // Intitializing the readFileLines with filename
 process.argv.forEach((val, index) => {
-  console.log(`${index}: ${val}`);
   if (val.includes("DataPackMetadata")) {
     differences.push(val);
   }
-  console.log("differences: " + differences);
 });
 
 fs.readFile("./index/FilePaths.json", "utf8", (err, jsonString) => {
   if (err) {
-    console.log("Error reading file from disk:", err);
     return;
   }
   try {
@@ -32,16 +29,11 @@ fs.readFile("./index/FilePaths.json", "utf8", (err, jsonString) => {
           var drive = tokens[0];
           var fileName = tokens[tokens.length - 1];
           var len = drive.length + fileName.length;
-          console.log(fileName);
           var FileShort=fileName.split('/');
           FileshortName= FileShort[0];
           var NPath=  DataPackInfo[j].FilePath+FileshortName;
-          console.log(NPath);
           var sourceDir = './'+NPath;
           var destDir = './tmpDatapacks/'+DataPackInfo[j].Sobject+'/'+FileshortName;
-          console.log(sourceDir);
-          console.log(destDir);
-          
           if (!fs.existsSync(destDir)){
             fs.mkdirSync(destDir, { recursive: true });
         }

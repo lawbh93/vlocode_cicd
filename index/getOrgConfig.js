@@ -8,22 +8,13 @@ var newList= [];
 
 var action='getOrgInfo';
 process.argv.forEach((val, index) => {
-  console.log(`${index}: ${val}`);
   newList.push(val);
 });
-console.log(newList);
 OrgName= newList[2];
 var username= newList[3];
 var client_secret= newList[4];
 var passToken= newList[5];
 var client_id= newList[6]
-
-console.log(newList[2]);
-console.log(newList[3]);
-console.log(newList[4]);
-console.log(newList[5]);
-console.log(newList[6]);
-
 
 fs.readFile('./index/config.json', 'utf8', (err2, jsonString) => {
     try {
