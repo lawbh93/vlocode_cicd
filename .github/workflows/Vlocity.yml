@@ -32,3 +32,4 @@ jobs:
           client_id: ${{ secrets.CLIENT_ID }}
           url: ${{ secrets.URL }}
           datapackFilePath: './index/datapack.yaml'
+          vlocityMetadata: 'DataPackMetadata'

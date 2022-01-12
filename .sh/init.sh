@@ -9,17 +9,23 @@ client_secret=${client_secret:default}
 passToken=${passToken:default}
 client_id=${client_id:default}
 url=${url:default}
-datapackFilePath=${url:datapackFilePath}
+datapackFilePath=${datapackFilePath:default}
+vlocityMetadata=${vlocityMetadata:default}
 echo "the username is: " $username
 echo "the client_secret is: " $client_secret
 echo "the password is: " $passToken
 echo "the client_id is: " $client_id
 echo "the url is: " $url
 echo "the datapack.yaml path is" $datapackFilePath
+echo "the Vlocity Objects are in the next folder" $vlocityMetadata
+
+FilesPath='{ "ObjectToJson":"'+ $vlocityMetadata+'"}'
+echo  'FilePath Json -> ' $FilesPath)
+
 for ((i = 0; i < ${#protectedBranches[@]}; ++i)); do
 
 if [[ " ${protectedBranches[i]} " =~  ${Destino} ]]; then
-       VAR=$(git diff remotes/origin/$Destino...$Origen --name-only)
+       VAR=$(git diff remotes/origin/$Destino...$Origen --name-only $vlocityMetadata)
 fi
 done
 
@@ -31,7 +37,7 @@ git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
 git fetch --all
 git branch --show-current
 
-node index/FindStrings.js $VAR
+node index/FindStrings.js $VAR $FilesPath
 
 git add tmpDatapacks/
 #

@@ -23,6 +23,10 @@ inputs:
   url:
     required: true
   datapackFilePath:
+    description: 'Where is the vlocity manifest (yaml file)?'
+    required: true
+  vlocityMetadata:
+    description: 'Where are the vlocity datapacks?'
     required: true
 outputs:
   Destino: # id of output
