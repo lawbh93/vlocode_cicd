@@ -37,7 +37,7 @@ fs.readFile('./index/config.json', 'utf8', (err2, jsonString) => {
           }
 
           var execProcess = require("./exec_process.js");
-          execProcess.result(`username=${username} client_secret=${client_secret} client_id=${client_id} url=${url} passToken=${passToken} OrgId=${OrgId} defURL=${defURL} action=${action} bash .sh/oAuth.sh`, function(err, response) {
+          execProcess.result(`username=${username} client_secret=${client_secret} client_id=${client_id} passToken=${passToken} OrgId=${OrgId} defURL=${defURL} action=${action} bash .sh/oAuth.sh`, function(err, response) {
               if(!err){
                   console.log(response);
               }else {
