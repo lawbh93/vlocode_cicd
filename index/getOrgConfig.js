@@ -6,6 +6,7 @@ var OrgName;
 process.argv.forEach((val, index) => {
   console.log(`${index}: ${val}`);
   OrgName=val;
+  console.log('OrgName '+OrgName);
 });
 
 fs.readFile('./index/config.json', 'utf8', (err2, jsonString) => {
@@ -13,6 +14,8 @@ fs.readFile('./index/config.json', 'utf8', (err2, jsonString) => {
         const configParse = JSON.parse(jsonString);
         for (let i = 0; i < configParse.length; i++) {
             if(configParse[i].Org_Name==OrgName) {
+              console.log('configParse[i].Org_Name '+configParse[i].Org_Name);
+              console.log('OrgName '+OrgName);
               console.log('Read file');
             }
         }
