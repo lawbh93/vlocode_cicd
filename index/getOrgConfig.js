@@ -13,7 +13,7 @@ process.argv.forEach((val, index) => {
   newList.push(val);
 });
 console.log(newList);
-Org_Name= newList[0];
+OrgName= newList[0];
 var username= newList[1];
 var client_secret= newList[2];
 var passToken= newList[3];
