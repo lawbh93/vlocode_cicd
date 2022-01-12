@@ -19,7 +19,7 @@ echo "the url is: " $url
 echo "the datapack.yaml path is" $datapackFilePath
 echo "the Vlocity Objects are in the next folder" $vlocityMetadata
 
-FilesPath='{"ObjectToJson":"'+$vlocityMetadata+'"}'
+FilesPath='{"ObjectToJson":"'$vlocityMetadata'"}'
 echo  'FilePath Json -> ' $FilesPath
 
 for ((i = 0; i < ${#protectedBranches[@]}; ++i)); do
