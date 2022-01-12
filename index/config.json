@@ -1,0 +1,22 @@
+[
+  {
+    "Org_Name": "sandbox",
+    "Org_Id": "00DS0000000GX0b",
+    "default_Url": "https://test.salesforce.com"
+  },
+  {
+    "Org_Name": "integrado",
+    "Org_Id": "00DS0000000GD0b",
+    "default_Url": "https://test.salesforce.com"
+  },
+  {
+    "Org_Name": "uat",
+    "Org_Id": "00DS0000000DX0b",
+    "default_Url": "https://test.salesforce.com"
+  },
+  {
+    "Org_Name": "prod",
+    "Org_Id": "00DS0000000DN0b",
+    "default_Url": "https://login.salesforce.com"
+  }
+]
