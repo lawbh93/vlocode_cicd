@@ -2,7 +2,6 @@ const core = require("@actions/core");
 const github = require("@actions/github");
 var fs = require('fs');
 var fse = require('fs-extra');
-var OrgName;
 var OrgId;
 var defURL;
 var newList= [];
@@ -13,17 +12,17 @@ process.argv.forEach((val, index) => {
   newList.push(val);
 });
 console.log(newList);
-OrgName= newList[0];
-var username= newList[1];
-var client_secret= newList[2];
-var passToken= newList[3];
-var client_id= newList[4]
+OrgName= newList[3];
+var username= newList[4];
+var client_secret= newList[5];
+var passToken= newList[6];
+var client_id= newList[7]
 
-console.log(newList[0]);
-console.log(newList[1]);
-console.log(newList[2]);
 console.log(newList[3]);
 console.log(newList[4]);
+console.log(newList[5]);
+console.log(newList[6]);
+console.log(newList[7]);
 
 fs.readFile('./index/config.json', 'utf8', (err2, jsonString) => {
     try {
