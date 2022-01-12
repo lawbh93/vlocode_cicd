@@ -6,10 +6,13 @@ var fse = require('fs-extra');
 
 var differences = [];
 var NewListDiffs =[];
+var datapackFilePath;
 // Intitializing the readFileLines with filename
 process.argv.forEach((val, index) => {
   if (val.includes("tmpDatapacks")) {
     differences.push(val);
+  } else if(val.includes('.yaml')) {
+    datapackFilePath=val;
   }
 });
 
@@ -40,7 +43,7 @@ try {
                   const DatapackMetadata = JSON.parse(jsonString2)
                   for (let i = 0; i < DatapackMetadata.length; i++) {
                       if(DatapackMetadata[i].vlocity_sobject__c==DataPack.VlocityRecordSObjectType) {
-                          fs.appendFile('index/datapack.yaml','\n'+'   '+'- VlocityDataPackType: ' + DatapackMetadata[i].DeveloperName +'\n'+'      ' +'query: '+DatapackMetadata[i].queryFields__c+' '+ DatapackMetadata[i].vlocity_sobject__c + ' '+DatapackMetadata[i].Condition__c +' '+DatapackMetadata[i].X2ndCondition__c+'= '+'\''+DataPack.Name+'\'' , function (err2) {
+                          fs.appendFile(datapackFilePath,'\n'+'   '+'- VlocityDataPackType: ' + DatapackMetadata[i].DeveloperName +'\n'+'      ' +'query: '+DatapackMetadata[i].queryFields__c+' '+ DatapackMetadata[i].vlocity_sobject__c + ' '+DatapackMetadata[i].Condition__c +' '+DatapackMetadata[i].X2ndCondition__c+'= '+'\''+DataPack.Name+'\'' , function (err2) {
                               if (err2) throw err2;
                               console.log('Updated!');
                                 });

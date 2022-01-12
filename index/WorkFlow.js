@@ -18,9 +18,11 @@ try {
   const client_id = core.getInput('client_id');
   /** url */
   const url = core.getInput('url');
+  /** url */
+  const datapackFilePath = core.getInput('datapackFilePath');
 
   /*username */
-  
+
   core.setOutput("Destino", Destino);
   core.setOutput("Origen", Origen);
   core.setOutput("protectedBranches", protectedBranches);
@@ -31,7 +33,7 @@ try {
   if(Destino) {
     /*Init */
     var execProcess = require("./exec_process.js");
-    execProcess.result(`Destino=${Destino} Origen=${Origen} protectedBranches=${protectedBranches} username=${username} client_secret=${client_secret} client_id=${client_id} url=${url} passToken=${passToken} bash .sh/init.sh`, function(err, response) {
+    execProcess.result(`Destino=${Destino} Origen=${Origen} protectedBranches=${protectedBranches} username=${username} client_secret=${client_secret} client_id=${client_id} url=${url} passToken=${passToken} datapackFilePath=${datapackFilePath} bash .sh/init.sh`, function(err, response) {
         if(!err){
             console.log(response);
         }else {

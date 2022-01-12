@@ -22,6 +22,8 @@ inputs:
     required: true
   url:
     required: true
+  datapackFilePath:
+    required: true
 outputs:
   Destino: # id of output
       description: 'Target'
