@@ -9,8 +9,9 @@ var FilePathJson
 // Intitializing the readFileLines with filename
 process.argv.forEach((val, index) => {
   if(val.includes("ObjectToJson")) {
-    const filepathVal = JSON.parse(val.ObjectToJson);
-    if (val.includes(filepathVal)) {
+    const filepathVal = JSON.parse(val);
+    console.log(filepathVal.ObjectToJson);
+    if (val.includes(filepathVal.ObjectToJson)) {
       differences.push(val);
     } 
   }
