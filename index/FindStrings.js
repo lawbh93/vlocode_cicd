@@ -7,10 +7,13 @@ var fse = require('fs-extra');
 var differences = [];
 // Intitializing the readFileLines with filename
 process.argv.forEach((val, index) => {
+  console.log('init');
+  console.log(val);
+  console.log('fin');
   if(val.includes("ObjectToJson")) {
     const filepathVal = JSON.parse(val);
     console.log('console del '+filepathVal.ObjectToJson);
-    if (val.includes(filepathVal.ObjectToJson)) {
+    if (val.includes(filepathVal.ObjectToJson+'/')) {
       console.log('entra a condicion');
       differences.push(val);
     }
