@@ -37,7 +37,7 @@ jobs:
       - name: Deploy Example
         env: 
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        id: actionInfo
+        id: actionInfo2
         uses: lawbh93/vlocode_cicd@latest
         with:
           Head_Branch: 'master'

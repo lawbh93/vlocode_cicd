@@ -58,39 +58,3 @@ if [[ " ${eventAction} " =~  'checkOnly' ]]; then
 elif [[ " ${eventAction} " =~  'deploy' ]]; then
     echo 'already is undefined'
 fi
-<<<<<<< HEAD
-=======
-done
-
-echo 'Differences start'
-echo $VAR
-echo 'Differences end'
-
-git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
-git fetch --all
-git branch --show-current
-
-node index/FindStrings.js $VAR $FilesPath
-git status
-git add tmpDatapacks/
-#
-for ((i = 0; i < ${#protectedBranches[@]}; ++i)); do
-
-if [[ " ${protectedBranches[i]} " =~  ${Destino} ]]; then
-       VAR2=$(git diff --cached --name-only $Origen tmpDatapacks)
-fi
-done
-
-echo 'Differences start2'
-echo $VAR2 
-echo 'Differences end2'
-node index/FindStringC.js $VAR2 $datapackFilePath
-git add index/
-git restore --staged tmpDatapacks
-git status
-git diff --cached $BRANCH index
-
-Org_Name='sandbox'
-
-node index/getOrgConfig.js $Org_Name $username $client_secret $passToken $client_id
->>>>>>> 919bba9087e5a9c038278131554625cfa0079543
