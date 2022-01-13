@@ -36,7 +36,7 @@ git fetch --all
 git branch --show-current
 
 node index/FindStrings.js $VAR $FilesPath
-
+git status
 git add tmpDatapacks/
 #
 for ((i = 0; i < ${#protectedBranches[@]}; ++i)); do
