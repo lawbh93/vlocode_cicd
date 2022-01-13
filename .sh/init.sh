@@ -56,5 +56,7 @@ if [[ " ${eventAction} " =~  'checkOnly' ]]; then
 
     node index/getOrgConfig.js $Org_Name $username $client_secret $passToken $client_id       
 elif [[ " ${eventAction} " =~  'deploy' ]]; then
-    echo 'already is undefined'
+    echo 'showing datapackFILE '
+    cat $datapackFilePath
+    
 fi
