@@ -28,6 +28,9 @@ inputs:
   vlocityMetadata:
     description: 'Where are the vlocity datapacks?'
     required: true
+  eventAction:
+    description: 'checkOnly or deploy'
+    required: true
 outputs:
   Destino: # id of output
       description: 'Target'

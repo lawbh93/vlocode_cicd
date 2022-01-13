@@ -33,3 +33,21 @@ jobs:
           url: ${{ secrets.URL }}
           datapackFilePath: './index/datapack.yaml'
           vlocityMetadata: 'DataPackMetadata'
+          eventAction: 'checkOnly'
+      - name: Deploy Example
+        env: 
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        id: actionInfo
+        uses: lawbh93/vlocode_cicd@latest
+        with:
+          Head_Branch: 'master'
+          Origin_Branch:  ${{ steps.brancha.outputs.BRANCHNAME }}
+          protectedBranches: 'master,release,develop'
+          username: ${{ secrets.USERNAME }}
+          client_secret: ${{ secrets.CLIENT_SECRET }}
+          passToken: ${{ secrets.PASSWORD }}
+          client_id: ${{ secrets.CLIENT_ID }}
+          url: ${{ secrets.URL }}
+          datapackFilePath: './index/datapack.yaml'
+          vlocityMetadata: 'DataPackMetadata'
+          eventAction: 'deploy'
