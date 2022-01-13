@@ -17,7 +17,7 @@ if [[ " ${action} " =~  ${getOrgInfoVar} ]]; then
   curl -d "username=$username&client_secret=$client_secret&password=$passToken&grant_type=password&client_id=$client_id" -H "Accept: application/json" $defURL -o accessInfo.json
   echo 'entra a curl'
   node index/oAuthVlocity.js $OrgId
-elif  [[ " ${action} " =~  ${getOrgInfoVar} ]]; then
+elif  [[ " ${action} " =~  ${oAuthInfoVar} ]]; then
 echo 'entra a comando vlocity'
 vlocity -sf.accessToken $access_token -sf.instanceUrl $instance_url -sf.sessionId $OrgId -vlocity.namespace vlocity_cmt -job ./index/datapack.yaml cleanOrgData
 fi

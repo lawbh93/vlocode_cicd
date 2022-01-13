@@ -17,7 +17,7 @@ jobs:
         id: brancha
         run: |
           echo "::set-output name=BRANCHNAME::${GITHUB_REF#refs/heads/}"
-      - name: Reading Info
+      - name: DataPack Export
         env: 
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         id: actionInfo
@@ -34,7 +34,7 @@ jobs:
           datapackFilePath: './index/datapack.yaml'
           vlocityMetadata: 'DataPackMetadata'
           eventAction: 'checkOnly'
-      - name: Deploy Example
+      - name: DataPack Deployment
         env: 
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         id: actionInfo2
