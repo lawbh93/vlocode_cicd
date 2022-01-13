@@ -13,7 +13,8 @@ process.argv.forEach((val, index) => {
     if (val.includes(filepathVal.ObjectToJson)) {
       console.log('entra a condicion');
       differences.push(val);
-    } 
+    }
+    console.log('differencias: '+differences);
   }
 });
 
