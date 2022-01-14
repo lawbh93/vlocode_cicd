@@ -21,6 +21,7 @@ fs.readFile('./accessInfo.json', 'utf8', (err2, jsonString) => {
               }
           });
     } catch(err2) {
-        console.log('Error parsing JSON ', err2)
+        core.setFailed("Error: "+err2,'color: #FF0000');
+        process.exit(1);
     }
 })
