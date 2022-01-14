@@ -18,11 +18,12 @@ fs.readFile('./accessInfo.json', 'utf8', (err2, jsonString) => {
               if(!err){
                   console.log(response);
               }else {
-                  console.log(err);
+                console.log('\x1b[31m%s\x1b[0m', err);
               }
           });
-    } catch(err2) {
+    } catch(err) {
         console.log('\x1b[31m%s\x1b[0m', err2);
+        console.log('\x1b[33m%s\x1b[0m', err);
         processo.exit(1);
     }
 })
