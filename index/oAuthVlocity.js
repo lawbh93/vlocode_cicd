@@ -22,7 +22,7 @@ fs.readFile('./accessInfo.json', 'utf8', (err2, jsonString) => {
               }
           });
     } catch(err2) {
-        core.setFailed("Error: "+err2,'color: #FF0000');
+        console.log("Error: "+err2,'color: #FF0000');
         processo.exit(1);
     }
 })
