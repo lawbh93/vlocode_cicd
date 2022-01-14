@@ -16,7 +16,7 @@ fs.readFile('./accessInfo.json', 'utf8', (err2, jsonString) => {
           var execProcess = require("./exec_process.js");
           execProcess.result(`access_token=${oAuthInfo.access_token} instance_url=${oAuthInfo.instance_url} action=${action} OrgId=${OrgId}  bash .sh/oAuth.sh`, function(err, response) {
               if(!err){
-                  console.log(response);
+                  console.log('response'+response);
               }else {
                 console.log('\x1b[31m%s\x1b[0m', err);
               }
