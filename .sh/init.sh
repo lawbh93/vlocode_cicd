@@ -58,6 +58,7 @@ if [[ " ${eventAction} " =~  'checkOnly' ]]; then
     node index/getOrgConfig.js $Org_Name $username $client_secret $passToken $client_id       
 elif [[ " ${eventAction} " =~  'deploy' ]]; then
     echo 'showing datapackFILE '
+    echo -e "\e[31m showing datapackFILE \e[0m"
     cat $datapackFilePath
 
 fi

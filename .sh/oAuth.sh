@@ -16,6 +16,7 @@ OrgId=${OrgId:default}
 if [[ " ${action} " =~  ${getOrgInfoVar} ]]; then
   curl -d "username=$username&client_secret=$client_secret&password=$passToken&grant_type=password&client_id=$client_id" -H "Accept: application/json" $defURL -o accessInfo.json
   echo 'entra a curl'
+  echo -e "\e[31m entra a curl \e[0m"
   node index/oAuthVlocity.js $OrgId
 elif  [[ " ${action} " =~  ${oAuthInfoVar} ]]; then
 echo 'entra a comando vlocity'
