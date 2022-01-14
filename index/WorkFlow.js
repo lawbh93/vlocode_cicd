@@ -47,4 +47,5 @@ const github = require('@actions/github');
     }
   } catch (error) {
   core.setFailed(error.message);
+  process.exitCode(1);
 }
