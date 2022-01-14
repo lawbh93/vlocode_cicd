@@ -34,6 +34,7 @@ jobs:
           datapackFilePath: './index/datapack.yaml'
           vlocityMetadata: 'DataPackMetadata'
           eventAction: 'checkOnly'
+          FilePathsJson: './index/FilePaths.json'
       - name: DataPack Deployment
         env: 
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
@@ -51,3 +52,4 @@ jobs:
           datapackFilePath: './index/datapack.yaml'
           vlocityMetadata: 'DataPackMetadata'
           eventAction: 'deploy'
+          FilePathsJson: './index/FilePaths.json'

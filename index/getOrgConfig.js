@@ -23,10 +23,8 @@ fs.readFile('./index/config.json', 'utf8', (err2, jsonString) => {
             if(configParse[i].Org_Name==OrgName) {
               OrgId=configParse[i].Org_Id;
               defURL=configParse[i].default_Url;
-
             }
           }
-
           var execProcess = require("./exec_process.js");
           execProcess.result(`username=${username} client_secret=${client_secret} client_id=${client_id} passToken=${passToken} OrgId=${OrgId} defURL=${defURL} action=${action} bash .sh/oAuth.sh`, function(err, response) {
               if(!err){
@@ -35,10 +33,8 @@ fs.readFile('./index/config.json', 'utf8', (err2, jsonString) => {
                   console.log(err);
               }
           });
-    
-          
 } catch(err2) {
-        console.log('Error parsing JSON string 2:', err2)
+        console.log('Error parsing JSON ', err2)
     }
 })
 

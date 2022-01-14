@@ -12,6 +12,7 @@ url=${url:default}
 datapackFilePath=${datapackFilePath:default}
 vlocityMetadata=${vlocityMetadata:default}
 eventAction=${eventAction:default}
+FilePathsJson=${FilePathsJson:default}
 
 echo "the datapack.yaml path is" $datapackFilePath
 echo "the Vlocity Objects are in the next folder" $vlocityMetadata
@@ -32,7 +33,7 @@ if [[ " ${eventAction} " =~  'checkOnly' ]]; then
     git fetch --all
     git branch --show-current
 
-    node index/FindStrings.js $VAR $FilesPath
+    node index/FindStrings.js $VAR $FilesPath $FilePathsJson
 
     git add tmpDatapacks/
     #
@@ -58,5 +59,5 @@ if [[ " ${eventAction} " =~  'checkOnly' ]]; then
 elif [[ " ${eventAction} " =~  'deploy' ]]; then
     echo 'showing datapackFILE '
     cat $datapackFilePath
-    
+
 fi

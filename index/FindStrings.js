@@ -1,11 +1,10 @@
 const core = require("@actions/core");
 const github = require("@actions/github");
-
 var fs = require('fs');
 var fse = require('fs-extra');
-
 var differences = [];
 var filepathVal;
+var FilePathsJson;
 // Intitializing the readFileLines with filename
 process.argv.forEach((val, index) => {
   if(val.includes("ObjectToJson")) {
@@ -19,8 +18,13 @@ process.argv.forEach((val, index) => {
     differences.push(val);
   }
 });
+process.argv.forEach((val, index) => {
+if(val.includes('FilePaths.json')){
+  FilePathsJson=val;
+}
+});
 
-fs.readFile("./index/FilePaths.json", "utf8", (err, jsonString) => {
+fs.readFile(FilePathsJson, "utf8", (err, jsonString) => {
   if (err) {
     return;
   }
@@ -32,7 +36,6 @@ fs.readFile("./index/FilePaths.json", "utf8", (err, jsonString) => {
         if (str.includes(DataPackInfo[j].FilePath)) {
           var newString = DataPackInfo[j].FilePath;
           var tokens = str.split(newString);
-
           var drive = tokens[0];
           var fileName = tokens[tokens.length - 1];
           var len = drive.length + fileName.length;
@@ -44,7 +47,6 @@ fs.readFile("./index/FilePaths.json", "utf8", (err, jsonString) => {
           if (!fs.existsSync(destDir)){
             fs.mkdirSync(destDir, { recursive: true });
         }
-        
         //copy directory content including subfolders
         fse.copy(sourceDir, destDir, function (err) {
           if (err) {

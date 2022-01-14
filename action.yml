@@ -31,6 +31,9 @@ inputs:
   eventAction:
     description: 'checkOnly or deploy'
     required: true
+  FilePathsJson:
+    description: 'path to FilePaths.json'
+    default: './index/FilePaths.json'
 outputs:
   Destino: # id of output
       description: 'Target'

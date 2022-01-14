@@ -15,7 +15,6 @@ process.argv.forEach((val, index) => {
     datapackFilePath=val;
   }
 });
-
 try {
   for (let i = 0; i < differences.length; i++) {
     var str = differences[i];
@@ -25,9 +24,7 @@ try {
   }
   for(let j=0;j<NewListDiffs.length;j++) {
     var fileToOpen='./'+NewListDiffs[j];
-
     //#region 
-
     fs.readFile(fileToOpen, 'utf8', (err, jsonString) => {
       if (err) {
           return
@@ -48,27 +45,17 @@ try {
                               console.log('Updated!');
                                 });
                       }
-                  }
-                    
+                  }        
           } catch(err2) {
                   console.log('Error parsing JSON string 2:', err2)
               }
           })
-  
   } catch(err) {
           console.log('Error parsing JSON string 1:', err)
       }
   })
-  
-    
-
     //#endregion
-
-
-
   }
-
-
 } catch (err) {
   console.log("Error parsing JSON string:", err);
 }
