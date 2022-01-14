@@ -2,6 +2,7 @@ const core = require("@actions/core");
 const github = require("@actions/github");
 var fs = require('fs');
 var fse = require('fs-extra');
+const processo = require("process");
 var action='oAuthInfo';
 var OrgId='';
 process.argv.forEach((val, index) => {
@@ -22,6 +23,6 @@ fs.readFile('./accessInfo.json', 'utf8', (err2, jsonString) => {
           });
     } catch(err2) {
         core.setFailed("Error: "+err2,'color: #FF0000');
-        process.exit(1);
+        processo.exit(1);
     }
 })
