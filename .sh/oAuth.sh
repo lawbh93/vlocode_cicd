@@ -14,10 +14,17 @@ OrgId=${OrgId:default}
 
 
 if [[ " ${action} " =~  ${getOrgInfoVar} ]]; then
-  curl -d "username=$username&client_secret=$client_secret&password=$passToken&grant_type=password&client_id=$client_id" -H "Accept: application/json" $defURL -o accessInfo.json
+
   echo 'entra a curl'
+
+  curl -d "username=$username&client_secret=$client_secret&password=$passToken&grant_type=password&client_id=$client_id" -H "Accept: application/json" $defURL -o accessInfo.json || cond=${true}
+  if [[ " ${cond} " ==  ${true} ]]; then
+  echo "Game over!"
+  exit 1
+  else
   echo -e "\e[31m entra a curl \e[0m"
   node index/oAuthVlocity.js $OrgId
+  fi
 elif  [[ " ${action} " =~  ${oAuthInfoVar} ]]; then
 echo 'entra a comando vlocity'
 vlocity -sf.accessToken $access_token -sf.instanceUrl $instance_url -sf.sessionId $OrgId -vlocity.namespace vlocity_cmt -job ./index/datapack.yaml cleanOrgData
