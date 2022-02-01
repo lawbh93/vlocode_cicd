@@ -13,24 +13,24 @@ inputs:
     required: true 
     default: 'master,release,develop'
   username:
-    required: true
+    required: false
   client_secret:
-    required: true
+    required: false
   passToken:
-    required: true
+    required: false
   client_id:
-    required: true
+    required: false
   url:
-    required: true
+    required: false
   datapackFilePath:
     description: 'Where is the vlocity manifest (yaml file)?'
-    required: true
+    required: false
   vlocityMetadata:
     description: 'Where are the vlocity datapacks?'
-    required: true
+    required: false
   eventAction:
     description: 'checkOnly or deploy'
-    required: true
+    required: false
   FilePathsJson:
     description: 'path to FilePaths.json'
     default: './index/FilePaths.json'
